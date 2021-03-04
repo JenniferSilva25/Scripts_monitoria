@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitoria</title>
+    <style>
+      button {display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 30%;
+      background: #7648ad;
+      border: 1px solid rgb(219, 213, 226);
+      cursor: pointer;
+      color: white;}
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Monitoria de Linguagem de script</h1>
+      <h2>Click no botão referente a questão</h2>
+      <div class="data">
+        <button onclick="dataExtenso()">Questão 1: Data por extenso</button>
+        <div id="dataExtenso"></div>
+      </div>
+
+      <div class="naipe">
+        <button onclick="chamaCarta()">Questão 2: Informações da carta</button>
+        <div id="carta"></div>
+      </div>
+
+      <div class="Encaixe">
+        <button onclick="encaixa()">Questão 3: Se encaixa ou não</button>
+        <div id="encaixe"></div>
+      </div>
+
+      <div class="Sequencia">
+        <button onclick="Sequencia()">Questão 4: Sequencia dos numeros</button>
+      </div>
+
+      <div class="frase">
+        <button onclick="Frase()">Questão 5: Palavra na frase</button>
+        <div id="frase"></div>
+      </div>
+
+
+      <div class="salarioColaborador">
+        <button onclick="SalarioColaborador()">Questão 6: Ajuste no salario do colaborador</button>
+        <div id="antigo"></div>
+        <div id="percentual"></div>
+        <div id="aumento"></div>
+        <div id="reajuste"></div>
+      </div>
+
+
+    <script src="./script/script.js"></script>
+    </body>
+</html>
